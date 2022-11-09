@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400|Raleway:300,700");
+body {
+  font: 22px/1.4 "Raleway", "Open Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  min-width: 100%;
+  min-height: 100%;
+  overflow: auto;
+}
+
+.wrapper {
+  display: flex;
+}
+
+.sidebar {
+  width: 60px;
+  height: 100vh;
+  background: #191b22;
+  color: white;
+  display: flex;
+  align-items: center;
+  transition: 0.2s all;
+}
+
+.change__icon > .fa-bars {
+  visibility: hidden;
+}
+.change__icon > .fa-xmark {
+  visibility: visible;
+}
+
+.sidebar__icon {
+  cursor: pointer;
+}
+
+.fa-solid {
+  font-size: 50px;
+  opacity: 0.9;
+  cursor: pointer;
+}
+
+.fa-bars {
+  visibility: visible;
+  padding-left: 5px;
+  position: absolute;
+}
+
+.fa-xmark {
+  font-size: 50px;
+  visibility: hidden;
+  left: 5px;
+  position: absolute;
+}
+
+.main {
+  position: relative;
+  width: 100%;
+}
+
+.main__bg {
+  background: #444;
+}
+
+.main__content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 100px;
+  transition: 0.3s all;
+}
+
+.main__content_bg {
+  background: rgb(161, 177, 210);
+  transform: translate(20%, 5%) scale(0.9);
+  max-height: 70vh;
+  max-width: 78vw;
+  overflow: auto;
+}
